@@ -1,0 +1,41 @@
+// Place all the styles related to the tip_calculator controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    background: #111 url(https://www.chapman.edu/_assets/undergrad-admissions-6b05436c3ff08330a37837dcf25b8c5c1749cc7456f32c7383593726a4125407.jpg) no-repeat center;
+    background-size: cover;
+}
+main {
+    background-color: white;
+    min-height: 400px;
+    padding: 1px 40px 30px;
+}
+
+.hide {
+    display: none;
+}
+.title {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.message {
+    margin-top: 25px;
+}
+.slider-group {
+    line-height: 38px;
+}
+.slider-group label {
+    text-align: center;
+    width: 8%; 
+}
+.slider-group .slider {
+    width: 90%;
+}
+.slider .slider-selection {
+    background: #BABABA;
+}
+
+//Fix for bootstrap-slider's tooltip issue. https://github.com/seiyria/bootstrap-slider/issues/689
+.slider.slider-horizontal:hover, .slider.slider-vertical:hover { .tooltip.tooltip-main { opacity: 1 !important; } }

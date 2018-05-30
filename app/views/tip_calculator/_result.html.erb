@@ -1,0 +1,11 @@
+<div class='results'>
+	<% if @tc.errors.any? %>
+		<ul class="list-group">
+			<% @tc.errors.full_messages.each do |msg| %>
+			<li class="list-group-item list-group-item-danger"><%= msg %></li>
+			<% end %>
+		</ul>
+	<% else %>
+	<h3 class='alert alert-success' role="alert">Each person pays <span><%= @tip %></span></h3>
+	<% end %>
+</div>

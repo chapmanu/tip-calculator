@@ -1,0 +1,52 @@
+<main role="main" class='container'>
+
+	<div class="nav-container logo-container" style="max-width: 256px;">
+		<div class="cu-logo-wrapper">
+			<div class="primary-logo">
+				<svg xmlns="http://www.w3.org/2000/svg" class="chapman-logo" viewBox="0 0 273.7 28.1">
+					<title>Chapman University</title>
+					<path class="cls-1" id="window"></path>
+					<g id="chapman-university"><path class="cls-2"></path></g>
+				</svg>
+			</div>
+		</div>
+	</div>
+	
+	<div class="title">
+		<h1>Tip Calculator!</h1>
+		<p class="text-muted">Tipping is hard. Let us help.</p>
+	</div>
+		
+	<%= form_for @tc, url: {action: "calc"}, html: {remote: true, class: "form-horizontal"} do |f| %>
+		
+	<div class="row">
+		<div class="col-sm form-group">
+			<%= f.text_field :cost, class: "form-control", placeholder: "Cost" %>
+		</div>
+		<div class="col-sm">
+			<div class="form-group slider-group">
+				<label id="tp-label">15</label>
+				<%= f.text_field :tip_percent, id: "tip_percent_slider", class: "form-control slider" %>
+			</div>
+		</div>
+		<div class="col-sm form-group">
+			<%= f.text_field :num_people, class: "form-control", placeholder: "# of People" %>
+		</div>
+	</div>
+		
+	<div class="row text-center">
+		<div class="col-md">
+			<%= f.button "Calculate Tip", class: 'btn-submit btn btn-primary' %>
+		</div>
+	</div>
+		
+	<div clas="row">
+		<div class='message'>
+			<h3 class='factor-results__text'>Enter the cost, percentage, and number of people</h3>
+		</div>
+	</div>
+	<% end %>
+
+</main>
+
+
