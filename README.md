@@ -8,9 +8,9 @@ Also, ~~-Overlord-~~ Ross is demanding new features. Build those too.
 
 ### Acceptance Criteria
 
-* Clone the tip-calculator repository from https://github.com/chapmanu/tip-calculator to the directory named **challenge** in your user directory (i.e. your working directory will be ~/challenge/tip-calculator).
-* Make a new branch to collect your commits.
-* When complete, the index page should correctly calculate the tip for the given inputs.
+* Inside your terminal, clone the tip-calculator repository from https://github.com/chapmanu/tip-calculator to the directory named **challenge** in your user directory (i.e. your working directory will be `~/challenge/tip-calculator`).
+* Navigate to your cloned repository and run `bundle install`. After everything installs, start the application with `rails s`. 
+* In your browser, navigate to `localhost:3000` and resolve any issues. When complete, the index page should correctly calculate the tip for the given inputs.
 * Build as many of the features as you can.
 
 ### Feature Requests
@@ -38,6 +38,6 @@ Also, ~~-Overlord-~~ Ross is demanding new features. Build those too.
 * https://github.com/seiyria/bootstrap-slider
 
 <!---
-Developed by Joey Hoang
-Version 20180531
+Developed by Joey Hoang (2018-05-31)
+Version 20220523
 -->
