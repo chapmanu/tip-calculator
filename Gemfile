@@ -5,8 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Using gem dependancies compatiable with Ruby 2.4.1
+gem 'racc', '~> 1.5.2'
+gem 'nokogiri', '~> 1.10.10'
+gem 'globalid', '~> 0.4.2'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
